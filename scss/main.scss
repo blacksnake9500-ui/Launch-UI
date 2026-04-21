@@ -843,6 +843,7 @@ nav {
   .container {
     padding: 50px 0px;
     position: relative;
+    overflow: hidden;
 
     .title {
       text-align: center;
@@ -907,6 +908,7 @@ nav {
 .s5 {
   .container {
     padding: 50px 0px;
+    overflow: hidden;
 
     .title {
       padding: 30px 0px;
@@ -1030,7 +1032,7 @@ nav {
 .s7 {
   .container {
     padding: 50px 0px;
-
+    overflow: hidden;
     .title {
       text-align: center;
       padding: 30px 0px;
@@ -1179,7 +1181,7 @@ footer {
     display: flex;
     align-items: start;
     justify-content: space-between;
-
+    overflow: hidden;
     ul {
       line-height: 35px;
 

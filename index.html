@@ -6,6 +6,7 @@
     <title>Launch UI | Salohiddin</title>
     <link rel=" icon" href="./imgs/logo.png" />
     <link rel="stylesheet" href="./scss/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -18,11 +19,10 @@
     <div id="loader">
       <div class="spinner"></div>
     </div>
-
-    <div id="content" style="display: none">
+    <!-- <div data-aos="fade-down" id="content" style="display: none">
       <h1 id="title">Welcome to my site</h1>
       <hr />
-    </div>
+    </div> -->
 
     <div class="page-style">
       <ul>
@@ -35,8 +35,8 @@
     <header>
       <nav>
         <div class="container">
-          <ul>
-            <li>
+          <ul data-aos="fade-down" data-aos-duration="2000">
+            <li data-aos="fade-down" data-aos-duration="3000">
               <h2>
                 <img src="./imgs/logo.png" alt="" />
                 <span>L</span>
@@ -51,25 +51,33 @@
                 <span>I</span>
               </h2>
             </li>
-            <li>Getting started</li>
-            <li>Components</li>
-            <li><button class="bog">Bog'ni yuzini topish</button></li>
+            <li data-aos="fade-down">Getting started</li>
+            <li data-aos="fade-down">Components</li>
+            <li data-aos="fade-down">
+              <button class="bog">Bog'ni yuzini topish</button>
+            </li>
           </ul>
-          <ul>
-            <li><button class="light_button">🌙 Mode</button></li>
-            <li><button>Document</button></li>
+          <ul data-aos="fade-left" data-aos-duration="3000">
+            <li data-aos="fade-down">
+              <button class="light_button">⚪ Mode</button>
+            </li>
+            <li data-aos="fade-down"><button>Document</button></li>
           </ul>
         </div>
       </nav>
       <div class="hero">
         <div class="container">
-          <div class="title">
-            <p>New version of Launch UI is out!</p>
-            <button>Read more <i class="fa-solid fa-arrow-right"></i></button>
+          <div data-aos="fade-down" class="title">
+            <p data-aos="fade-down">New version of Launch UI is out!</p>
+            <button data-aos="fade-down">
+              Read more <i class="fa-solid fa-arrow-right"></i>
+            </button>
           </div>
           <div class="info">
-            <h1>Give your big idea the website it deserves</h1>
-            <p>
+            <h1 data-aos="zoom-in" data-aos-duration="2000">
+              Give your big idea the website it deserves
+            </h1>
+            <p data-aos="fade-up" data-aos-duration="1000">
               Landing page kit template with React, Shadcn/ui and Tailwind that
               you can copy/paste into your project.
             </p>
@@ -85,18 +93,26 @@
     <main>
       <section class="s1 element">
         <div class="container">
-          <div class="card">
+          <div data-aos="zoom-in" data-aos-duration="3000" class="card">
             <img src="./imgs/s1 img.png" alt="" />
           </div>
           <div class="bottom">
             <div class="title">
               <p>Built with the best tools</p>
             </div>
-            <ul>
-              <li><i class="fa-brands fa-figma"></i>Figma</li>
-              <li><i class="fa-brands fa-react"></i>React.js 18.3.1</li>
-              <li><i class="fa-brands fa-typescript"></i>Typescript 5.6.2</li>
-              <li>// Shadcn 2.0.7</li>
+            <ul data-aos="fade-down">
+              <li data-aos="fade-up" data-aos-duration="3000">
+                <i class="fa-brands fa-figma"></i>Figma
+              </li>
+              <li data-aos="fade-up" data-aos-duration="2500">
+                <i class="fa-brands fa-react"></i>React.js 18.3.1
+              </li>
+              <li data-aos="fade-up" data-aos-duration="2000">
+                <i class="fa-brands fa-typescript"></i>Typescript 5.6.2
+              </li>
+              <li data-aos="fade-up" data-aos-duration="1500">
+                // Shadcn 2.0.7
+              </li>
               <li>
                 <i class="fa-brands fa-tailwind-css"></i>Tailwind CSS 3.4.11
               </li>
@@ -107,11 +123,15 @@
 
       <section class="s2 element">
         <div class="container">
-          <div class="title">
+          <div data-aos="fade-right" data-aos-duration="3000" class="title">
             <h1>Build a better website, faster.</h1>
           </div>
           <div class="box">
-            <div class="card planet_card">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              class="card planet_card"
+            >
               <h2>100+ sections and components</h2>
               <p>
                 All the elements you need t build a modern, responsive, and
@@ -123,8 +143,11 @@
                 <div class="planet_circle2"></div>
               </div>
             </div>
-
-            <div class="card rocket_card">
+            <div
+              data-aos="fade-left"
+              data-aos-duration="2000"
+              class="card rocket_card"
+            >
               <h2>100+ sections and components</h2>
               <p>
                 All the elements you need t build a modern, responsive, and
@@ -142,7 +165,11 @@
                 <div class="ring6 rocket"></div>
               </div>
             </div>
-            <div class="card skill_tool">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              class="card skill_tool"
+            >
               <h2>100+ sections and components</h2>
               <p>
                 All the elements you need t build a modern, responsive, and
@@ -163,7 +190,7 @@
                 </div>
               </div>
             </div>
-            <div class="card">
+            <div data-aos="fade-left" data-aos-duration="2000" class="card">
               <h2>100+ sections and components</h2>
               <p>
                 All the elements you need t build a modern, responsive, and
@@ -177,39 +204,39 @@
 
       <section class="s3 element">
         <div class="container">
-          <div class="title">
+          <div data-aos="fade-down" class="title">
             <h1>Everything you need.Nothing you don’t.</h1>
           </div>
           <div class="box">
-            <div class="card">
+            <div data-aos="flip-left" class="card">
               <h2><i class="fa-solid fa-smile"></i>Accessibility first</h2>
               <p>Fully WCAG 2.0 compliment, made with best a11y practices</p>
             </div>
-            <div class="card">
+            <div data-aos="flip-left" class="card">
               <h2><i class="fa-solid fa-smile"></i>Accessibility first</h2>
               <p>Fully WCAG 2.0 compliment, made with best a11y practices</p>
             </div>
-            <div class="card">
+            <div data-aos="flip-left" class="card">
               <h2><i class="fa-solid fa-smile"></i>Accessibility first</h2>
               <p>Fully WCAG 2.0 compliment, made with best a11y practices</p>
             </div>
-            <div class="card">
+            <div data-aos="flip-left" class="card">
               <h2><i class="fa-solid fa-smile"></i>Accessibility first</h2>
               <p>Fully WCAG 2.0 compliment, made with best a11y practices</p>
             </div>
-            <div class="card">
+            <div data-aos="flip-left" class="card">
               <h2><i class="fa-solid fa-smile"></i>Accessibility first</h2>
               <p>Fully WCAG 2.0 compliment, made with best a11y practices</p>
             </div>
-            <div class="card">
+            <div data-aos="flip-left" class="card">
               <h2><i class="fa-solid fa-smile"></i>Accessibility first</h2>
               <p>Fully WCAG 2.0 compliment, made with best a11y practices</p>
             </div>
-            <div class="card">
+            <div data-aos="flip-left" class="card">
               <h2><i class="fa-solid fa-smile"></i>Accessibility first</h2>
               <p>Fully WCAG 2.0 compliment, made with best a11y practices</p>
             </div>
-            <div class="card">
+            <div data-aos="flip-left" class="card">
               <h2><i class="fa-solid fa-smile"></i>Accessibility first</h2>
               <p>Fully WCAG 2.0 compliment, made with best a11y practices</p>
             </div>
@@ -219,7 +246,7 @@
 
       <section class="s4 element">
         <div class="container">
-          <div class="title">
+          <div data-aos="fade-down" class="title">
             <h1>Quality you can trust.And build on.</h1>
             <p>
               You can trust that all of the designs are taking the full
@@ -227,7 +254,7 @@
               following best practices out there.
             </p>
           </div>
-          <div class="img">
+          <div data-aos="zoom-out" class="img">
             <div class="big_hole"></div>
             <div class="block"></div>
           </div>
@@ -236,7 +263,7 @@
 
       <section class="s5 element">
         <div class="container">
-          <div class="title">
+          <div data-aos="fade-down" class="title">
             <h1>Make the right impression</h1>
             <p>
               Launch UI makes it easy to build an unforgetable website that
@@ -245,21 +272,21 @@
           </div>
           <div class="box">
             <div class="box1">
-              <div class="card">
+              <div data-aos="fade-right" class="card">
                 <h3><i class="fa-solid fa-square"></i>Choose your sections</h3>
                 <p>
                   Choose among 100+ components to build a landing page suited to
                   the needs of your product.
                 </p>
               </div>
-              <div class="card">
+              <div data-aos="fade-right" class="card">
                 <h3><i class="fa-solid fa-square"></i>Choose your sections</h3>
                 <p>
                   Choose among 100+ components to build a landing page suited to
                   the needs of your product.
                 </p>
               </div>
-              <div class="card">
+              <div data-aos="fade-right" class="card">
                 <h3><i class="fa-solid fa-square"></i>Choose your sections</h3>
                 <p>
                   Choose among 100+ components to build a landing page suited to
@@ -267,7 +294,7 @@
                 </p>
               </div>
             </div>
-            <div class="box2">
+            <div data-aos="fade-left" class="box2">
               <img src="./imgs/s5 img.png" alt="" />
             </div>
           </div>
@@ -276,12 +303,12 @@
 
       <section class="s6 element">
         <div class="container">
-          <div class="title">
+          <div data-aos="fade-down" class="title">
             <h1>Loved by designers and developers across the planet</h1>
             <p>Here’s what people are saying about Launch UI</p>
           </div>
           <div class="box">
-            <div class="card">
+            <div data-aos="zoom-in" class="card">
               <div class="person">
                 <div class="avatar">
                   <img src="./imgs/Avatar.png" alt="" />
@@ -297,7 +324,7 @@
                 is doing a happy dance.
               </p>
             </div>
-            <div class="card">
+            <div data-aos="zoom-in" class="card">
               <div class="person">
                 <div class="avatar">
                   <img src="./imgs/Avatar.png" alt="" />
@@ -313,7 +340,7 @@
                 is doing a happy dance.
               </p>
             </div>
-            <div class="card">
+            <div data-aos="zoom-in" class="card">
               <div class="person">
                 <div class="avatar">
                   <img src="./imgs/Avatar.png" alt="" />
@@ -329,7 +356,7 @@
                 is doing a happy dance.
               </p>
             </div>
-            <div class="card">
+            <div data-aos="zoom-in" class="card">
               <div class="person">
                 <div class="avatar">
                   <img src="./imgs/Avatar.png" alt="" />
@@ -345,7 +372,7 @@
                 is doing a happy dance.
               </p>
             </div>
-            <div class="card">
+            <div data-aos="zoom-in" class="card">
               <div class="person">
                 <div class="avatar">
                   <img src="./imgs/Avatar.png" alt="" />
@@ -361,7 +388,7 @@
                 is doing a happy dance.
               </p>
             </div>
-            <div class="card">
+            <div data-aos="zoom-in" class="card">
               <div class="person">
                 <div class="avatar">
                   <img src="./imgs/Avatar.png" alt="" />
@@ -383,7 +410,7 @@
 
       <section class="s7 element">
         <div class="container">
-          <div class="title">
+          <div data-aos="fade-down" class="title">
             <h1>Build your dream landing page, today.</h1>
             <p>
               Get lifetime access to all the components. No recurring fees. Just
@@ -391,7 +418,7 @@
             </p>
           </div>
           <div class="box">
-            <div class="card">
+            <div data-aos="fade-right" class="card">
               <div class="shadow"></div>
               <div class="titlee">
                 <h3>Free</h3>
@@ -419,7 +446,7 @@
                 </li>
               </ul>
             </div>
-            <div class="card">
+            <div data-aos="fade-up" class="card">
               <div class="shadow"></div>
               <div class="titlee">
                 <h3>Pro</h3>
@@ -447,7 +474,7 @@
                 </li>
               </ul>
             </div>
-            <div class="card">
+            <div data-aos="fade-left" class="card">
               <div class="shadow"></div>
               <div class="titlee">
                 <h3>Team</h3>
@@ -481,41 +508,41 @@
 
       <section class="s8 element">
         <div class="container">
-          <div class="title">
+          <div data-aos="fade-down" class="title">
             <h1>Questions and Answers</h1>
           </div>
           <div class="box">
-            <div class="card">
+            <div data-aos="zoom-out-down" class="card">
               <p>
                 Is Launch UI easy to customise?
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
               </p>
             </div>
-            <div class="card">
+            <div data-aos="zoom-out-down" class="card">
               <p>
                 Is Launch UI easy to customise?
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
               </p>
             </div>
-            <div class="card">
+            <div data-aos="zoom-out-down" class="card">
               <p>
                 Is Launch UI easy to customise?
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
               </p>
             </div>
-            <div class="card">
+            <div data-aos="zoom-out-down" class="card">
               <p>
                 Is Launch UI easy to customise?
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
               </p>
             </div>
-            <div class="card">
+            <div data-aos="zoom-out-down" class="card">
               <p>
                 Is Launch UI easy to customise?
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
               </p>
             </div>
-            <div class="card">
+            <div data-aos="zoom-out-down" class="card">
               <p>
                 Is Launch UI easy to customise?
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -528,23 +555,23 @@
 
     <footer>
       <div class="container">
-        <ul>
+        <ul data-aos="zoom-in-right">
           <li>
             <h3><img src="./imgs/logo.png" alt="" />Launch UI</h3>
           </li>
         </ul>
-        <ul>
+        <ul data-aos="zoom-in-right">
           <li>Product</li>
           <li>Changelog</li>
           <li>Documentation</li>
         </ul>
-        <ul>
+        <ul data-aos="zoom-in-left">
           <li>Company</li>
           <li>About</li>
           <li>Careers</li>
           <li>Blog</li>
         </ul>
-        <ul>
+        <ul data-aos="zoom-in-left">
           <li>Contact</li>
           <li>Github</li>
           <li>Discord</li>
@@ -554,9 +581,9 @@
     </footer>
   </body>
   <script src="./main.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    setTimeout(() => {
-      document.getElementById("title").style.display = "none";
-    }, 2000);
+    AOS.init();
   </script>
 </html>
