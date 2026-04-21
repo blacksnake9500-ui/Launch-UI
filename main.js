@@ -1,3 +1,7 @@
+setTimeout(() => {
+  document.getElementById("title").style.display = "none";
+}, 2000);
+
 window.addEventListener("load", function () {
   let loader = document.getElementById("loader");
   loader.classList.add("fade");
@@ -14,9 +18,9 @@ button.addEventListener("click", () => {
   document.body.classList.toggle("lightmode");
 
   if (document.body.classList.contains("lightmode")) {
-    button.innerHTML = "☀️ Mode";
+    button.innerHTML = "⚫ Mode";
   } else {
-    button.innerHTML = "🌙 Mode";
+    button.innerHTML = "⚪ Mode";
   }
 });
 
